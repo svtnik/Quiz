@@ -1,18 +1,24 @@
+import time
+
 print("Willkommen zum Quiz!")
 
 playing = input("Möchtest du mitmachen? ")
 
 if playing.lower() == "ja":
-    print("Ok! Los gehts!")
+    print("Ok!")
 else:
     quit()
+
+time.sleep(1)
 
 print("Zuvor noch eine Frage:")
 name = input("Wie soll ich dich nennen?: ")
 
+time.sleep(1)
+
 score = 0
 
-answer = input("Ok " + str(name) + ", frage eins: Was ist umgangssprachlich H2O? ")
+answer = input("Ok " + str(name) + ", erste frage: Was ist umgangssprachlich H2O? ")
 if answer.lower() == "wasser":
     print("Richtig!")
     score += 1
